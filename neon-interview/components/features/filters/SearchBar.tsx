@@ -32,7 +32,7 @@ export function SearchBar() {
         placeholder="Search users by name..."
         value={searchInput}
         onChange={e => setSearchInput(e.target.value)}
-        className="w-full rounded-xl border border-gray-300 bg-white py-3.5 pl-12 pr-12 text-gray-900 shadow-sm transition-all placeholder:text-gray-400 hover:border-gray-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400 dark:hover:border-gray-600 dark:focus:border-primary-400 dark:focus:ring-primary-400/25 dark:[color-scheme:dark]"
+        className="w-full rounded-xl border border-gray-300 bg-white py-3.5 pl-12 pr-12 text-gray-900 shadow-sm transition-all placeholder:text-gray-400 hover:border-gray-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400 dark:hover:border-gray-600 dark:focus:border-primary-400 dark:focus:ring-primary-400/25 dark:[color-scheme:dark] [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none"
         aria-label="Search users"
       />
 
