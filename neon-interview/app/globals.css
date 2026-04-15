@@ -20,4 +20,16 @@
       sans-serif;
     min-height: 100vh;
   }
+
+  /* Ensure form controls visibly switch in dark mode. */
+  .dark input,
+  .dark select,
+  .dark textarea,
+  [data-theme='dark'] input,
+  [data-theme='dark'] select,
+  [data-theme='dark'] textarea {
+    background-color: #1f2937 !important; /* gray-800 */
+    color: #f9fafb !important; /* gray-50 */
+    border-color: #374151 !important; /* gray-700 */
+  }
 }

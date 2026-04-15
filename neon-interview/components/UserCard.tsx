@@ -2,7 +2,11 @@
 
 import { User } from '@/types/user';
 import Link from 'next/link';
-import { UserCardAvatar, ContactInfo, CardFooter } from './UserCardElements';
+import {
+  UserCardAvatar,
+  ContactInfo,
+  CardFooter,
+} from '@/components/features/users/UserCardElements';
 
 interface UserCardProps {
   user: User;
@@ -22,7 +26,7 @@ export function UserCard({ user }: UserCardProps) {
 
   return (
     <Link href={`/users/${user.id}`}>
-      <article className="group h-full overflow-hidden rounded-xl border border-gray-300 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:border-blue-500">
+      <article className="card-interactive group h-full overflow-hidden">
         <div className="p-6">
           {/* Header with avatar and name */}
           <div className="mb-4 flex items-center gap-4">

@@ -44,7 +44,7 @@ interface CardFooterProps {
 
 export function CardFooter({ city }: CardFooterProps) {
   return (
-    <div className="mt-4 flex items-center justify-between border-t border-gray-200 pt-3 dark:border-gray-700">
+    <div className="mt-4 flex items-center justify-between border-t border-gray-200 pt-3 dark:border-gray-600">
       <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
         <LocationIcon />
         <span>{city}</span>

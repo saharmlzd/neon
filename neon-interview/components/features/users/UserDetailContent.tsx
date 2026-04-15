@@ -28,9 +28,7 @@ export function UserDetailContent({ user }: UserDetailContentProps) {
 
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
         <div className="card p-8">
-          <h1 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-            {user.name}
-          </h1>
+          <h1 className="text-primary mb-6 text-3xl font-bold">{user.name}</h1>
 
           <div className="grid gap-6 md:grid-cols-2">
             <InfoSection title="Contact Information">

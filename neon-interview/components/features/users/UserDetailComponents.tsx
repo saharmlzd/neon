@@ -6,9 +6,7 @@ interface InfoSectionProps {
 export function InfoSection({ title, children }: InfoSectionProps) {
   return (
     <div>
-      <h2 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
-        {title}
-      </h2>
+      <h2 className="text-primary mb-4 text-xl font-semibold">{title}</h2>
       <dl className="space-y-3">{children}</dl>
     </div>
   );
@@ -23,10 +21,8 @@ interface InfoItemProps {
 export function InfoItem({ label, value, isLink }: InfoItemProps) {
   return (
     <div>
-      <dt className="text-sm font-medium text-gray-600 dark:text-gray-400">
-        {label}
-      </dt>
-      <dd className="mt-1 text-gray-900 dark:text-white">
+      <dt className="text-muted text-sm font-medium">{label}</dt>
+      <dd className="text-primary mt-1">
         {isLink ? (
           <a
             href={`https://${value}`}
