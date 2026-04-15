@@ -17,6 +17,7 @@ A modern, production-grade user dashboard built with Next.js 16, React 19, and T
 npm install
 
 # Run development server
+cd neon-interview
 npm run dev
 
 # Run tests
@@ -100,38 +101,6 @@ neon-app/
 └── __tests__/            # Jest tests
     ├── SearchBar.test.tsx
     └── UserCard.test.tsx
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Run tests
-npm test
-
-# Run linter
-npm run lint
-
-# Format code
-npm run format
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
 ```
 
 ## Code Quality Standards
